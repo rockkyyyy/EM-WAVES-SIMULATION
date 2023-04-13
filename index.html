@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>electromagnetic wave</title>
+		<link rel="stylesheet" href="./style.css">
+		<script src="./script.js"></script>
+    </head>
+    <body>
+        <canvas></canvas>
+        <header class="head">
+            <h1>EM WAVES SIMULATION</h1>
+        </header>
+        <a ><h3>Rakesh Vardhan<h3></a>
+        <input type=checkbox id=show-electric checked>
+        <label for=show-electric style='color: green'>
+          show electric field-( green color)</label><br>
+        <input type=checkbox id=show-magnetic checked>
+        <label for=show-magnetic style='color:red'>
+          show magnetic field-( red color)</label><br>
+        <input type=checkbox id=show-polar checked>
+        <label for=show-polar style='color:blue'>
+          show polorised wave- (blue color)</label><br>
+        <input type=checkbox id=rotate checked>
+        <label for=rotate>rotate view</label><br>
+        <div>phase difference:<br><input type=range min=0 max=240 value=0 id=phase oninput=resize()></div>
+    </body>
+</html>
